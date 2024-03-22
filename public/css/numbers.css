@@ -1,0 +1,65 @@
+body {
+    background-color: #b7adf4; /* dark blue/purple color */
+  }
+/* Adjust .game-container styles if needed, but remove global flexbox styles from body */
+.game-container {
+    margin-top: 20px; /* Keep this if you want some space below the navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(17, 17, 17, 0.3);
+    font-size: 18px;
+    color: #1a1919;
+    padding: 20px; /* Add some padding around game content */
+}
+
+img{
+    width: 10%;
+    height: 10%;
+    background-size: cover;
+    background-position: center;
+}
+
+.word-list-container,
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: move;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Add padding to the droppable areas */
+.droppable {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    padding: 5px;
+    font-size: 15px;
+   
+}
+
+/* Center the image more within the larger droppable area */
+.droppable img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+  
+}

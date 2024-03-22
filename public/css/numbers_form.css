@@ -1,0 +1,29 @@
+body{
+  /* background-image: url('../img/general/bb.png'); */
+  background-color: #b7adf4;
+
+  background-size: cover; /* This property ensures that the image covers the entire background */
+  background-repeat: repeat; /* Prevents the background image from repeating */
+  
+}
+
+.container {
+    color: #1a1919; /* pearl color font */
+    text-align: center; /* Center align content */
+    background-color: rgba(17, 17, 17, 0.3);
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: auto;
+}
+
+
+.card {
+    margin: auto; /* Center the card horizontally */
+}
+
+  .card-img-top {
+    width: 30%;
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+  }
